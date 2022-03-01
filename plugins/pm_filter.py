@@ -39,7 +39,7 @@ async def next_page(bot, query):
 
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("oKda", show_alert=True)
+        return await query.answer("സ്വന്തമായി സിനിമ ചോദിക്കു", show_alert=True)
     try:
         offset = int(offset)
     except:
